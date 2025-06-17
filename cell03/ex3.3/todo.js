@@ -29,7 +29,7 @@ function addTodo(text) {
       saveTodos();
     }
   });
-  ftList.appendChild(newTodo); // insert at end but we use flex-direction: column-reverse
+  ftList.appendChild(newTodo);
   saveTodos();
 }
 
