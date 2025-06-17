@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffb4eb 0%, #ffea74 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Quicksand', Arial, sans-serif;
+      margin: 0;
+    }
+    .profile-card {
+      background: #f1f8e9;
+      border-radius: 22px;
+      box-shadow: 0 8px 32px #ffffff80;
+      padding: 36px 32px 28px 32px;
+      min-width: 320px;
+      max-width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #813400;
+    }
+    .profile-title {
+      font-size: 1.7rem;
+      color: #5d2b00;
+      margin-bottom: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .profile-table {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0;
+    }
+    .profile-row {
+      display: table-row;
+    }
+    .profile-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0;
+    }
+    .profile-pic {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #000000;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 12px #a5d6a780;
+    }
+    .profile-login {
+      font-size: 1.1rem;
+      color: #000000;
+      margin-bottom: 6px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .profile-desc {
+      font-size: 1rem;
+      color: #522500;
+      margin-bottom: 14px;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+    .profile-socials {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 18px;
+      justify-content: center;
+    }
+    .profile-socials img {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      box-shadow: 0 2px 8px #a5d6a760;
+      background: #fff;
+    }
+    .profile-socials img:hover {
+      transform: scale(1.15) rotate(-8deg);
+      box-shadow: 0 4px 16px #341b00;
+    }
+    .contact-btn {
+      margin-top: 18px;
+      background: linear-gradient(90deg, #c00c90 60%, #ffa77eda 100%);
+      color: #000000;
+      border: none;
+      border-radius: 18px;
+      padding: 12px 38px;
+      font-size: 1.1rem;
+      font-family: inherit;
+      box-shadow: 0 4px 16px #ff20c480;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .contact-btn:hover {
+      background: linear-gradient(90deg, #ffc664 60%, #532500 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-title">My Profile</div>
+    <div class="profile-table">
+      <div class="profile-row">
+        <div class="profile-cell">
+          <img class="profile-pic" src="https://th.bing.com/th/id/R.e246c617d7dd01ef287673edaaf67175?rik=CH4ikBURjWSPjQ&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED880%2f6413dfac6a8c7.jpeg&ehk=TU5VbItav2xhgpBIYMyPhXkE5i9wfO3IJOYYCoslZnE%3d&risl=&pid=ImgRaw&r=0" alt="Profile Picture">
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-login">"Wanchana</div>
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-desc">James</div>
+        </div>
+      </div>
+      <div class="profile-row">
+        <div class="profile-cell">
+          <div class="profile-socials">
+            <a href="https://github.com/WanchanaJames" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="background:#fff;"/></a>
+            <a href="https://twitter.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" style="background:#fff;"/></a>
+            <a href="https://linkedin.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="background:#fff;"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:your@email.com" class="contact-btn">Contact</a>
+  </div>
+</body>
+</html>
