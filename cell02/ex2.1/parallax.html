@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax</title>
+  <link rel="stylesheet" href="parallax.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Quicksand', Arial, sans-serif;
+      background: #222;
+      color: #fff;
+    }
+    .parallax-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+    .parallax-bg {
+    
+      background-image: url('https://th.bing.com/th/id/OIP.Oc9j5PzHFY5GUX3h81X1IwHaEs?rs=1&pid=ImgDetMain');
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax-bg .message {
+      background: rgb(255, 168, 196);
+      padding: 32px 48px;
+      border-radius: 18px;
+      font-size: 2rem;
+      color: #fff;
+      box-shadow: 0 4px 24px #0006;
+    }
+    .black-block {
+      background: #111;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 24px rgb(255, 135, 223);
+    }
+    .parallax-bg2 {
+      
+      background-image: url('https://th.bing.com/th/id/R.f6e1cb2360c79f0df126fc85e8a34206?rik=9Fxp9ShA9es7Dg&pid=ImgRaw&r=0');
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parallax-bg2 .message {
+      background: rgb(255, 154, 204);
+      padding: 32px 48px;
+      border-radius: 18px;
+      font-size: 2rem;
+      color: #ffffff;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    }
+    @media (max-width: 700px) {
+      .parallax-bg .message,
+      .parallax-bg2 .message {
+        font-size: 1.1rem;
+        padding: 16px 10vw;
+      }
+      .black-block {
+        font-size: 1.1rem;
+        padding: 0 10vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="parallax-section parallax-bg">
+    <div class="message">
+      Welcome to new new sweetie!
+    </div>
+  </section>
+  <section class="parallax-section black-block">
+    <div>
+      so sweet
+    </div>
+  </section>
+  <section class="parallax-section parallax-bg2">
+    <div class="message">
+      enjoy sweet yum yum<br>
+      bye bye
+    </div>
+  </section>
+</body>
+</html>
