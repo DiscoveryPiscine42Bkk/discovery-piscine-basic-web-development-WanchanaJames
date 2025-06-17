@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="todo.css">
+  <style>
+    #ft_list {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .todo {
+      background-color: #ffefb0;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="newBtn">New</button>
+  <div id="ft_list"></div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
