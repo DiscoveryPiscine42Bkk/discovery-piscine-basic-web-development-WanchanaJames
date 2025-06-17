@@ -16,7 +16,6 @@ $(document).ready(function() {
 
     function showExplosion() {
         $message.css('opacity', 1);
-        $balloon.text("Click me!");
         
         setTimeout(() => {
             $message.css('opacity', 0);
@@ -24,7 +23,7 @@ $(document).ready(function() {
         }, 1000);
     }
 
-    $balloon.on('click', function() {
+    $balloon.on('click', function() { 
         size += 10;
         
         if (size > 420) {

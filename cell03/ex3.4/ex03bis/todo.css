@@ -1,0 +1,28 @@
+#ft_list {
+  display: flex;
+  flex-direction: column-reverse; 
+  width: 300px;
+  margin: 20px auto;
+}
+
+.todo {
+  background-color: #ffefb0; 
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background 0.2s ease;
+}
+
+.todo:hover {
+  background-color: #f9e58c;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
