@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    table {
+      width: 100vw;
+      height: 100vh;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    td {
+      border: 1px solid #000;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 2vw; 
+      font-family: sans-serif;
+      word-wrap: break-word;
+      padding: 1vw;
+    }
+
+    .cell1 { background-color: #dcedc8; }
+    .cell2 { background-color: #ffccbc; }
+    .cell3 { background-color: #bbdefb; }
+    .cell4 { background-color: #ffe082; }
+    .cell5 { background-color: #e1bee7; }
+
+    /* ทำให้ตารางมีหลายแถวถ้าหน้าจอเล็ก */
+    @media (max-width: 768px) {
+      table {
+        display: block;
+      }
+
+      tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
+      td {
+        font-size: 4vw;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="cell1">Cell 1</td>
+      <td class="cell2">Cell 2</td>
+      <td class="cell3">Cell 3</td>
+      <td class="cell4">Cell 4</td>
+      <td class="cell5">Cell 5</td>
+    </tr>
+  </table>
+</body>
+</html>
