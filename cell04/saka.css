@@ -1,0 +1,486 @@
+
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+* a {
+  text-decoration: none;
+  color: #151515;
+}
+* li {
+  list-style: none;
+}
+body {
+  background-color: #f9f9f9;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+
+  padding: 10px 0;
+  position: relative;
+  border-bottom: solid px lightgray;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar {
+  display: none;
+}
+.logo a {
+  font-size: 1.625rem;
+  font-weight: 600;
+  letter-spacing: 2.0px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+
+  font-size: 0.875rem;
+}
+/* responsive navbar */
+@media screen and (max-width: 600px) {
+  .bar {
+    display: block;
+  }
+  nav {
+    align-items: center;
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px rgb(255, 255, 255);
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 20px 25px;
+    margin: 0;
+  }
+  nav ul li:hover {
+    background-color: #e8e8e8;
+  }
+  .dis {
+    display: none;
+  }
+}
+/* ส่วนของBanner */
+.logo-center {
+  text-align: center;
+  padding: 20px;
+}
+
+.round-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.hero-banner {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+  text-align: center;
+  color: rgb(145, 136, 136);
+  padding: 20px;
+  
+}
+
+.hero-banner h2{
+  color: rgb(219, 112, 147);
+  padding: 20px;
+}
+
+.hero-banner {
+  background-color: rgba(0, 0, 0, 0.3); 
+  color: rgb(18, 21, 202); 
+  border-radius: 10px;
+  margin: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.hero-banner h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+
+/* ส่วนของเนื้อหา */
+/* ตัวแปรและรีเซ็ตพื้นฐาน */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #f8f9fa;
+    --accent-color: #3498db;
+    --box-color: #3c45e7;
+    --text-color: #333;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* คอนเทนเนอร์หลัก */
+.curriculum-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* เมนูหัวข้อแบบกล่อง */
+.section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--box-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-box:hover {
+    background-color: #462bc0;
+    transform: translateY(-5px);
+}
+
+/* ส่วนหัวข้อหลักสูตร */
+.curriculum-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--box-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.section-content {
+    padding: 0 15px;
+}
+
+/* รายการอาชีพ */
+.career-list {
+    padding-left: 20px;
+}
+
+.career-list li {
+    margin-bottom: 10px;
+}
+
+/* ตารางโครงสร้างหลักสูตร */
+.curriculum-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.curriculum-table th, 
+.curriculum-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.curriculum-table th {
+    background-color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.curriculum-table tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .curriculum-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .section-content {
+        padding: 0;
+    }
+    
+    .nav-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+/* หัวข้อ */
+body {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* คอนเทนเนอร์หลัก */
+.curriculum-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--box-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-box:hover {
+    background-color: #bfaeae;
+    transform: translateY(-5px);
+}
+
+/* ส่วนหัวข้อหลักสูตร */
+.curriculum-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--box-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.section-content {
+    padding: 0 15px;
+}
+
+/* จุดที่3 อาชีพที่จบไป */
+.career-list {
+    padding-left: 20px;
+}
+
+.career-list li {
+    margin-bottom: 10px;
+}
+
+/* ตารางโครงสร้างหลักสูตร */
+.curriculum-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.curriculum-table th, 
+.curriculum-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.curriculum-table th {
+    background-color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.curriculum-table tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Responsive เนื้อหา*/
+@media (max-width: 768px) {
+    .curriculum-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-content {
+        padding: 0;
+    }
+    
+    .nav-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+/* ส่วนของของfooter */
+.site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 40px 0 20px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-heading {
+  color: var(--footer-accent);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--footer-accent);
+}
+
+/* ส่วนfooter */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-icon {
+  color: var(--footer-accent);
+  font-size: 1.1rem;
+  margin-top: 3px;
+}
+
+/* icon */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  color: var(--social-icon);
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    min-width: 100%;
+  }
+}
